@@ -193,9 +193,9 @@
 }
 .widget-title > button {
   font-size: initial;
-  color: white;
+  color: #C0CAF5;
   text-shadow: none;
-  background: #28282B;
+  background:  #15161E;
   border: 1px solid @noti-border-color;
   box-shadow: none;
   border-radius: 12px;
@@ -206,27 +206,29 @@
 
 /* DND widget */
 .widget-dnd {
-  margin: 8px;
-  font-size: 1.1rem;
+  margin: 10px;
+  font-size: 1rem;
 }
 .widget-dnd > switch {
   font-size: initial;
-  border-radius: 14px;
+  border-radius: 700px;
   background: @noti-bg;
-  border: 2px solid @noti-border-color;
+  border: 1px solid @noti-border-color;
   box-shadow: none;
 }
 .widget-dnd > switch:checked {
   background: @bg-selected;
+  border-radius: 700px;
 }
 .widget-dnd > switch slider {
-  background: @noti-bg-hover;
-  border-radius: 12px;
+  background: #C0CAF5;
+  border-radius: 400px;
 }
 
 /* Label widget */
 .widget-label {
   margin: 8px;
+  color: #C0CAF5;
 }
 .widget-label > label {
   font-size: 1.1rem;
