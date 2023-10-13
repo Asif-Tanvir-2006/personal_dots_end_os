@@ -10,6 +10,7 @@
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,filebrowser,window";
+    font:                          "FiraCode Nerd Font 16";
     show-icons:                 true;
     display-drun:               "   Apps";
     display-filebrowser:        "   Files";
@@ -55,8 +56,8 @@ window {
     anchor:                      southwest;
     fullscreen:                  false;
     transparency:                90;
-    height:                      725;
-    width:                       350px;
+    height:                      1035;
+    width:                       400px;
     x-offset:                    -10px;
     y-offset:                    -3px;
 
@@ -218,8 +219,8 @@ element normal.active {
     text-color:                  var(active-foreground);
 }
 element selected.normal {
-    background-color:            	#15161EFF;
-    text-color:                  var(selected-normal-background);
+    background-color:            	#CCCCCC;
+    text-color:                  #0c0d11;
 }
 element selected.urgent {
     background-color:            var(selected-urgent-background);

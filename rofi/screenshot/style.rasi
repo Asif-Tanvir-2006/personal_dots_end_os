@@ -51,7 +51,7 @@ mainbox {
 listview {
     enabled:                     true;
     columns:                     1;         /* Make it a single column for vertical layout */
-    lines:                       3;         /* Set the number of lines based on your needs */
+    lines:                       4;         /* Set the number of lines based on your needs */
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;

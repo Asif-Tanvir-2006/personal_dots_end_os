@@ -15,6 +15,7 @@ rofi_cmd() {
 
 
 󰉋
+
 EOF
 }
 
@@ -48,6 +49,13 @@ is_foot_running() {
 # Check if "code" (VSCode) is running (case-insensitive)
 is_vscode_running() {
 	if hyprctl clients | grep -qi "class: code"; then
+		return 0  # "code" is found (case-insensitive)
+	else
+		return 1  # "code" is not found
+	fi
+}
+is_gpt_running() {
+	if hyprctl clients | grep -qi "class: chat-gpt"; then
 		return 0  # "code" is found (case-insensitive)
 	else
 		return 1  # "code" is not found
@@ -88,6 +96,14 @@ run_cmd() {
 				hyprctl dispatch focuswindow code-oss
 			else
 				code &
+			fi
+			;;
+		'')
+			# Check if "code" (VSCode) is running
+			if is_gpt_running; then
+				hyprctl dispatch focuswindow chat-gpt
+			else
+				chat-gpt >/dev/null
 			fi
 			;;
 		*)

@@ -42,19 +42,29 @@
 }
 
 .notification {
+  /* font-size: 2rem; */
   transition: all 200ms ease;
-  border-radius: 12px;
-  margin: 6px 6px;
+  /* border-radius: 12px; */
+  border-top-left-radius: 12px; /* Rounded top-left corner */
+  border-top-right-radius: 12px; /* Rounded top-right corner */
+  /* margin: 6px 6px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: none;
-  padding: 0;
+  /* padding: 20px; */
   color: #C0CAF5;
+
 }
 
 /* poi_1 */
 .notification-content {
   background: 	 #0c0d11;
-  padding: 10px;
-  border-radius: 12px;
+  border: 1px solid #28282b;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+  font-size: 0.5rem;
+  padding: 18px;
+  border-radius:  0px 0px 0 0px;
   color: #C0CAF5;
 }
 
@@ -85,7 +95,9 @@
   margin: 0;
   box-shadow: none;
   background: #101012;
-  border: 1px solid @noti-border-color;
+  /* border: 1px solid @noti-border-color; */
+  border-top-left-radius: 12px; /* Rounded top-left corner */
+  border-top-right-radius: 12px; /* Rounded top-right corner */
   color: white;
   transition: all 200ms ease;
 }
@@ -119,7 +131,7 @@
 
 .notification-action:last-child {
   border-bottom-right-radius: 12px;
-  border-right: 1px solid @noti-border-color;
+  /* border-right: 1px solid @noti-border-color; */
 }
 
 .image {
@@ -189,14 +201,14 @@
 /* Title widget */
 .widget-title {
   margin: 8px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .widget-title > button {
-  font-size: initial;
+  font-size: 0.9rem;
   color: #C0CAF5;
   text-shadow: none;
   background:  #15161E;
-  border: 1px solid @noti-border-color;
+  border: 0.5px solid @noti-border-color;
   box-shadow: none;
   border-radius: 12px;
 }
@@ -207,7 +219,7 @@
 /* DND widget */
 .widget-dnd {
   margin: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .widget-dnd > switch {
   font-size: initial;
@@ -231,7 +243,7 @@
   color: #C0CAF5;
 }
 .widget-label > label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 /* Mpris widget */
@@ -269,7 +281,7 @@
 
 /* Buttons widget */
 .widget-buttons-grid {
-  padding: 17px;
+  padding: 20px;
   /* margin-top: 8px; */
   /* margin-bottom: 22px; */
   border-radius: 12px;
@@ -278,11 +290,15 @@
 /* poi3 */
 .widget-buttons-grid>flowbox>flowboxchild>button{
   background:  	#15161E;
+  font-size: 1rem;
+
   border-radius: 12px;
   padding: 10px;
-  border: 1px solid #28282b;
-  margin-right: 8px;
-  margin-bottom: 4px;
+  border: 0.66px solid #28282b;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: #C0CAF5;
 }
 
